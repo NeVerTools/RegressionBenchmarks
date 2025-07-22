@@ -47,6 +47,6 @@
 (assert (>= X_7 0.9029664432169744))
 
 ; unsafe if command is [3] (spec type maximal) 
-(assert 
-(<= Y_2 Y_3)
-)
+(assert (or
+    (assert (<= Y_2 Y_3))
+))

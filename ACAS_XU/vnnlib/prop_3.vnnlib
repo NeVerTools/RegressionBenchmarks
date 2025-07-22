@@ -33,7 +33,10 @@
 (assert (>= X_4 0.3))
 
 ; Unsafe if COC is minimal
-(assert (<= Y_0 Y_1))
-(assert (<= Y_0 Y_2))
-(assert (<= Y_0 Y_3))
-(assert (<= Y_0 Y_4))
+(assert (or
+    (and
+        (<= Y_0 Y_1)
+        (<= Y_0 Y_2)
+        (<= Y_0 Y_3)
+        (<= Y_0 Y_4)
+)))
